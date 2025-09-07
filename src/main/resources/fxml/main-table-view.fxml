@@ -4,8 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.MainTableViewController">
-    <TableView fx:id="tableView"
+<AnchorPane xmlns:fx="http://javafx.com/fxml" stylesheets="@/css/style.css" fx:controller="org.example.MainTableViewController">    <TableView fx:id="tableView"
                layoutX="10.0" layoutY="10.0"
                prefWidth="600.0" prefHeight="320.0"
                AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
@@ -15,10 +14,5 @@
             <TableColumn fx:id="emailColumn" text="Email"/>
             <TableColumn fx:id="roleColumn" text="Role"/>
         </columns>
-        <style>
-            -fx-font-size: 14px;
-            -fx-table-cell-border-color: #e0e0e0;
-            -fx-background-color: #fafafa;
-        </style>
     </TableView>
 </AnchorPane>
