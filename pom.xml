@@ -57,9 +57,10 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.example.demo.HelloApplication</mainClass>
+                    <mainClass>org.example.MainApplication</mainClass>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 </project>

@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.controller.MainTableViewController"
+            stylesheets="@/css/style.css">
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" stylesheets="@/css/style.css" fx:controller="org.example.MainTableViewController">    <TableView fx:id="tableView"
-               layoutX="10.0" layoutY="10.0"
-               prefWidth="600.0" prefHeight="320.0"
-               AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
-               AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20">
+    <TableView fx:id="tableView"
+               styleClass="responsive-table"
+               AnchorPane.topAnchor="20.0"
+               AnchorPane.leftAnchor="20.0"
+               AnchorPane.rightAnchor="20.0"
+               AnchorPane.bottomAnchor="20.0">
         <columns>
-            <TableColumn fx:id="nameColumn" text="Name"/>
-            <TableColumn fx:id="emailColumn" text="Email"/>
-            <TableColumn fx:id="roleColumn" text="Role"/>
+            <TableColumn fx:id="nameColumn" text="Name" prefWidth="200.0" />
+            <TableColumn fx:id="emailColumn" text="Email" prefWidth="250.0" />
+            <TableColumn fx:id="roleColumn" text="Role" prefWidth="150.0" />
         </columns>
     </TableView>
+
 </AnchorPane>
