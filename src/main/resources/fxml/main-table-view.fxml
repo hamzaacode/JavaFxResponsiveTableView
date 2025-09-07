@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.MainTableViewController">
+    <TableView fx:id="tableView"
+               layoutX="10.0" layoutY="10.0"
+               prefWidth="600.0" prefHeight="320.0"
+               AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"
+               AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="emailColumn" text="Email"/>
+            <TableColumn fx:id="roleColumn" text="Role"/>
+        </columns>
+        <style>
+            -fx-font-size: 14px;
+            -fx-table-cell-border-color: #e0e0e0;
+            -fx-background-color: #fafafa;
+        </style>
+    </TableView>
+</AnchorPane>
