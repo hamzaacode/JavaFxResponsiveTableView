@@ -24,9 +24,27 @@ public class MainTableViewController {
         roleColumn.setCellValueFactory(cellData -> cellData.getValue().roleProperty());
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         ObservableList<User> users = FXCollections.observableArrayList(
-            new User("Alice", "alice@example.com", "Admin"),
-            new User("Bob", "bob@example.com", "User"),
-            new User("Charlie", "charlie@example.com", "Guest")
+                new User("Alice", "alice@example.com", "Admin"),
+                new User("Bob", "bob@example.com", "User"),
+                new User("Charlie", "charlie@example.com", "Guest"),
+                new User("Alice", "alice@example.com", "Admin"),
+                new User("Bob", "bob@example.com", "User"),
+                new User("Charlie", "charlie@example.com", "Guest"),
+                new User("Alice", "alice@example.com", "Admin"),
+                new User("Bob", "bob@example.com", "User"),
+                new User("Charlie", "charlie@example.com", "Guest"),
+                new User("Alice", "alice@example.com", "Admin"),
+                new User("Bob", "bob@example.com", "User"),
+                new User("Charlie", "charlie@example.com", "Guest"),
+                new User("Alice", "alice@example.com", "Admin"),
+                new User("Bob", "bob@example.com", "User"),
+                new User("Charlie", "charlie@example.com", "Guest"),
+                new User("Alice", "alice@example.com", "Admin"),
+                new User("Bob", "bob@example.com", "User"),
+                new User("Charlie", "charlie@example.com", "Guest"),
+                new User("Alice", "alice@example.com", "Admin"),
+                new User("Bob", "bob@example.com", "User"),
+                new User("Charlie", "charlie@example.com", "Guest")
         );
         tableView.setItems(users);
     }
